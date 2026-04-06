@@ -1,17 +1,12 @@
---Data Cleaning and Transformation
-/*Actions: 
-	1. Remove nulls, pick latest information from the duplicates
-	2. Trim extra spaces
-*/
 /* 
 =======================================================================
 Stored Procedure: Load Silver Layer (Bronze -> Silver)
 =======================================================================
 Scripts Purpose:
-	This stored procedure cleans, transforms, and loads data into the 'silver' schema from bronze tables.
+	This stored procedure performs ETL processes and loads data into the 'silver' schema from bronze tables.
 	It performs the following actions:
 	- Truncates the silver tables before loading the data.
-	Uses the 'INSERT' statements to load data from bronze to silver tables.
+	- Uses the 'INSERT' statements to load transformed and cleanser data from bronze to silver tables.
 
 Parameters:
 	None.
